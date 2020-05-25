@@ -1,97 +1,107 @@
-# Shortcuts
+# Tastaturkürzel
 
-This page contains a list of all shortcuts available throughout the app.
+Diese Seite enthält eine Auflistung aller Tastaturkürzel der App.
 
-For remembering them easier, here are some thoughts we've put into assigning the shortcuts. In general, we try to follow these rules, but not all shortcuts follow them.
+Um sich an die Tastaturkürzel einfacher zu erinnern haben wir uns einige Gedanken zu der Belegung dieser gemacht. Im Allgemeinen folgen wir den genannte Regeln, aber es gibt ein paar Ausnahmen.
 
-1. **Common shortcuts**: Some shortcuts are so common that they don't fit into our shortcut system, but everybody will recognise them. One example is the preferences shortcut (`Cmd/Ctrl+,`), another the shortcut to finish editing a footnote (`Shift+Enter`). We try to use as many of these shortcuts as possible to reduce friction.
-2. **High-priority shortcuts**: You will be using these shortcuts _a lot_ while using the app. These are generally `Cmd/Ctrl` and one single letter. While naming the shortcuts we try to stick to the English names of the command that it triggers (**N**ew, **R**emove, **F**ind, etc). Sometimes this is not possible (for instance the Distraction Free mode is triggered via `Cmd/Ctrl+J`, because `Cmd/Ctrl+D` is already taken by the editor).
-3. **Alternative actions**: We take the semantic meaning of the `Alt`-key serious. Therefore, take a high-priority shortcut, add an `Alt` to it and you normally tend to trigger an alternative action on the same target. Notable exceptions to this are the developer panel (opens with `Cmd/Ctrl+Alt+I`, while `Cmd/Ctrl+I` makes text Italic). **This is true for _all_ actions that you can trigger using mouse clicks. All alternative mouse actions are triggered with an `Alt+Click`. In case `Alt-Click`s don't yield the expected results, `Ctrl+Click`s also work**.
-4. **Alternative targets**: In case you want to perform the same _action_, but on a different target, try using a `Shift`-key. Throughout most of the app, `Shift`-commands will change the target from the currently selected file to the currently selected directory. The search also utilises this (`Cmd/Ctrl+F` searches the file, while `Cmd/Ctrl+Shift+F` searches the whole directory).
+1. **Geläufige Tastaturkürzel**: Einige der Tastaturkürzel sind so geläufig, dass sie nicht in unser System passen, aber jeder diese kennt. Ein Beispiel dafür ist das Einstellungs-Tastaturkürzel (`Cmd/Ctrl+,`), ein weiteres das Tastaturkürzel zum Beenden des Bearbeiten einer Fußnote. Wir versuchen so viele von diesen wie möglich zu verwenden, um einen reibungslosen Ablauf einzuhalten.
+2. **Tastaturkürzel mit hoher Priorität**: Diese Tastaturkürzel wirst du _häufig_ verwenden. Allgemein sind dies `Cmd/Ctrl` und ein einzelner Buchstabe. Bei der Belegung versuchen wir uns an den englischen Bezeichnung der Funktion zu orientieren, die diese Kürzel ausführen (**N**ew, **R**emove, **F**ind, etc). Manchmal ist das allerdings nicht möglich, wie zum Beispiel beim ablenkungsfreien Modus, der mit `Cmd/Ctrl+J` gestartet wird, da `Cmd/Ctrl+D` bereits für den Editor verwendet wird.
 
-## App-wide shortcuts
+3. **Alternative Aktionen**: Wir nehmen die semantische Bedeutung der `Alt`-Taste ernst. Aus diesem Grund kannst du ein Tastaturkürzel mit hoher Priorität nehmen und zusätzlich `Alt` verwenden und führst damit im Allgemeinen eine alternative Aktion mit demselben Ziel aus. Einige beachtenswerte Ausnahmen sind das Entwickler-Panel, das mit `Cmd/Ctrl+Alt+I` geöffnet wird, während `Cmd/Ctrl+I` den Text kursiv stellt. **Das betrifft _alle_ Aktionen, die du mit der Maus auslösen kannst. Alle alternativen Maus-Aktionen kannst du mit `Alt+Click` auslösen. Falls das gewünschte Ergebnis mit `Alt+Click` nicht eintrifft sollte `Ctrl+Click` ebenfalls funktionieren**.
 
-* `Cmd/Ctrl+,`: Open Preferences
-* `Cmd/Ctrl+Alt+,`: Open PDF export Preferences
-* `Cmd/Ctrl+Q`: Exit the app
-* `Cmd/Ctrl+N`: Create a new file inside the currently selected directory. If none is selected, the command is disabled.
-* `Cmd/Ctrl+Shift+N`: Create a new directory inside the currently selected directory. If none is selected, the command is disabled.
-* `Cmd/Ctrl+O`: Display the dialog to open another directory.
-* `Cmd/Ctrl+S`: Save the file. Zettlr automatically saves your files, but some people tend to feel better having the option to manually save.
-* `Cmd/Ctrl+E`: Open the export popup for exporting the current file. If none is selected, the command is disabled.
-* `Cmd/Ctrl+R`: Rename the opened file. If none is selected, the command is disabled.
-* `Cmd/Ctrl+Shift+R`: Rename the current directory. If none is selected, the command is disabled.
-* `Cmd/Ctrl+Delete`: Delete the current file. If none is selected, the command is disabled.
-* `Cmd/Ctrl+Shift+Delete`: Delete the current directory. If none is selected, the command is disabled.
-* `Cmd/Ctrl+Shift+F`: Gives focus to the global search field.
-* `Cmd/Ctrl+Alt+L`: Switches the theme between light and dark mode.
-* `Cmd/Ctrl+Alt+S`: Toggles display of the text snippets.
-* `Cmd/Ctrl+Shift+1`: Toggles the sidebar mode to either view the file list or the tree view. Disabled in extended sidebar mode.
-* `Cmd/Ctrl+?`: Toggles display of the attachment sidebar.
-* `Cmd/Ctrl+[0-9]`: Open recent document at position 0 to 9 in the recent documents list (File->Recent Documents).
-* `Cmd+Ctrl+F` (macOS) `F11` (windows/Linux): Toggle fullscreen
-* `Cmd/Ctrl+W`: Close the application window. On Windows and Linux this will also exit the app.
-* `Cmd/Ctrl+M`: Minimize the application window.
-* `F1`: Open this documentation. This will open the link in your default browser.
+4. **Alternative Ziele**: Falls du die gleiche Aktion mit einem anderen Ziel ausführen möchtest kannst du eine `Shift`-Taste benutzen. Für den Großteil der App gilt, dass `Shift`-Tastenkombinationen von der aktuell selektierten Datei zu dem aktuell selektierten Verzeichnis ändern. Die Suche besitzt ebenfalls dieses Verhalten (`Cmd/Ctrl+F` durchsucht die Datei, `Cmd/Ctrl+Shift+F` das gesamte Verzeichnis).
 
-**If the debug mode is enabled**
+## Anwendungsweite Tastaturkürzel
 
-* `F5`: Reload the graphical user interface.
-* `Cmd+Alt+I` (macOs) `Ctrl+Shift+I` (Windows/Linux): Open the Chrome developer tools.
+* `Cmd/Ctrl+,`: Öffnet Einstellungen
+* `Cmd/Ctrl+Alt+,`: Öffnet PDF-Export-Einstellungen
+* `Cmd/Ctrl+Q`: App schließen
+* `Cmd/Ctrl+N`: Erstellt eine neue Datei im aktuellen ausgewählten Verzeichnis. Falls keines ausgewählt sein sollte ist die Tastenkombination deaktiviert.  
+* `Cmd/Ctrl+Shift+N`: Erstellt ein neues Verzeichnis im aktuell ausgewählten Verzeichnis. Falls keines ausgewählt sein sollte ist die Tastenkombination deaktiviert.
+* `Cmd/Ctrl+O`: Blendet den Dialog zum Öffnen eines anderen Verzeichnisses an
+* `Cmd/Ctrl+S`: Speichert die Datei. Zettlr speichert die Datien automatisch, aber einige fühlen sich besser, wenn sie die Option haben manuell zu speichern.
+* `Cmd/Ctrl+E`: Öffnet den Export-Dialog zum Exportieren der aktuellen Datei. Falls keine ausgewählt sein sollte ist die Tastenkombination deaktiviert.
+* `Cmd/Ctrl+R`: Umbennen der geöffneten Datei. Falls keine ausgewählt sein sollte ist die Tastenkombination deaktiviert.
+* `Cmd/Ctrl+Shift+R`: Umbenennen des aktuellen Verzeichnisses. Falls keines ausgewählt sein sollte ist die Tastenkombination deaktiviert.
+* `Cmd/Ctrl+Delete`: Löscht die aktuelle Datei. Falls keine ausgewählt sein sollte ist die Tastenkombination deaktiviert.
+* `Cmd/Ctrl+Shift+Delete`: Löscht das aktuelle Verzeichnis. Falls keines ausgewählt sein sollte ist die Tastenkombination deaktiviert.
+* `Cmd/Ctrl+Shift+F`: Fokussiert das globale Suchfeld
+* `Cmd/Ctrl+Alt+L`: Schaltet das Theme zwischen hell und dunkel hin und her
 
-## Textfield-related app-wide shortcuts
+* `Cmd/Ctrl+Alt+S`: Umschalten der Darstellung der Textausschnitte
 
-* `Cmd/Ctrl+Z`: Undo
-* `Cmd/Ctrl+Shift+Z`: Redo
-* `Cmd/Ctrl+X`: Cut
-* `Cmd/Ctrl+C`: Copy
-* `Cmd/Ctrl+V`: Paste
-* `Cmd/Ctrl+A`: Select all text
+* `Cmd/Ctrl+Shift+1`: Ein-/ausblenden des Seitenleisten-Modus um entweder die Datei-Liste oder die Baumansicht zu sehen. In dem erweiterten Seitenleisten-Modus deaktiviert.
 
-## Editor-related shortcuts
+* `Cmd/Ctrl+?`: Ein-/ausblenden der Seitenleiste für Anhänge
 
-* `Cmd/Ctrl+Alt+C`: Copy as HTML. If there is a selection, it will be converted to HTML and not copied as plain text. This allows you to paste it, e.g., into word processors.
-* `Cmd/Ctrl+Shift+C`: (Un-)Comment the given text selection (or add a new HTML comment at cursor position).
-* `Cmd/Ctrl+X`: Cut. If the editor has focus, it will cut the selection. If nothing is selected, this will cut **the whole line**, in which the cursor is.
-* `Cmd/Ctrl+V`: Paste. If the editor has focus, and you have just cut a whole line, it will paste this whole line above the line, in which the cursor currently is. Formatting will be preserved if the clipboard contains formatted text.
-* `Cmd/Ctrl+Shift+V`: The same as the above, except it will not try to preserve the formatting of the pasted text.
-* `Cmd/Ctrl+B`: Make the selection bold or insert new bold formatting characters.
-* `Cmd/Ctrl+I`: Make the selection italic or insert new italics formatting characters.
-* `Cmd/Ctrl+K`: Insert a new link template or convert the selected text into the caption of a new link. If the clipboard contains a recognisable link, also fill in the braces for the target.
-* `Cmd/Ctrl+F`: Opens the search popup inside the editor that has currently focus (either the main editor or a Quicklook window).
-* `Ctrl+Alt+F` (Windows/Linux) `Cmd+Alt+R` (macOS): Insert a new footnote at the current cursor position.
-* `Cmd/Ctrl+L`: Generate a new ID using the generator pattern from the settings dialog and insert it at the current cursor position.
-* `Cmd/Ctrl+0`: Re-set the font-size of the editor to standard.
-* `Cmd+Plus` (macOS) `Ctrl+Shift+Plus` (Windows/Linux): Increase the editor font size.
-* `Cmd/Ctrl+Minus`: Decrease the editor font size.
-* `Tab`: Indent a list.
-* `Shift-Tab`: Outdent a list.
-* `Shift-Enter`: When editing a footnote, saves the reference text. Otherwise it will prevent auto-insertion of a new list item.
-* `Ctrl-Enter`: Insert a line below the one your cursor is currently in, and place the cursor at the beginning of it.
-* `Ctrl-Shift-Enter`: Insert a line above the one where your cursor is currently, and place the cursor at the beginning of it.
+* `Cmd/Ctrl+[0-9]`: Öffnen des kürzlich verwendete Dokuments an den Stellen 0 bis 9 in der Liste kürzlich verwendeter Dokumente (Datei->Kürzlich verwendete Dokumente).
 
-## Table editor shortcuts
+* `Cmd+Ctrl+F` (macOS) `F11` (windows/Linux): Ein-/ausschalten des Vollbildmodus
 
-These shortcuts work in each table editor once you enter the edit mode by clicking into the table.
+* `Cmd/Ctrl+W`: Schließen des Anwendungsfensters. Unter Windows und Linux schließt sich hiermit auch die App.
 
-* `Tab`: Move to the next cell. If the last column is active, move to the first cell in the next row. If your cursor was in the last column of the last row, a new row will be added automatically.
-* `Shift-Tab`: Move to the previous cell. If your cursor was in the first column, move to the last cell in the previous column.
-* `Return`: Move to the same column in the next row. If your cursor was in the last row, a new row will be added automatically.
-* `Arrow Up/Arrow Down`: Move to the same column in the previous/next row. No new rows will be added if you are in the first or last row.
-* `Arrow Left/Arrow Right`: Move the cursor left/right. If the cursor is at the beginning/end of the cell's contents, move to the previous/next cell.
+* `Cmd/Ctrl+M`: Verkleinert das Anwendungsfenster
 
-## Preview-related shortcuts
+* `F1`: Öffnet diese Dokumentation. Der Link wird in deinem Standard-Browser geöffnet.
 
-* `Arrow Up`: Open the previous file.
-* `Arrow Down`: Open the next file.
-* `Cmd/Ctrl+Arrow Up`: Jump to the top of the list.
-* `Cmd/Ctrl+Arrow Down`: Jump to the bottom of the list.
+**Falls der Debug-Modus eingeschaltet ist**
 
-## Popup-related shortcuts
+* `F5`: Neu laden der grafischen Oberfläche.
+* `Cmd+Alt+I` (macOs) `Ctrl+Shift+I` (Windows/Linux): Öffnet die Chrome-Entwicklerwerkzeuge
 
-* `ESC`: If any text field inside the popup has focus, pressing Escape will close the popup.
+## Textfeld-bezogene anwendungsweite Tastaturkürzel
 
-**In the search popup of the main editor**
+* `Cmd/Ctrl+Z`: Rückgängig
+* `Cmd/Ctrl+Shift+Z`: Wiederholen
+* `Cmd/Ctrl+X`: Ausschneiden
+* `Cmd/Ctrl+C`: Kopieren
+* `Cmd/Ctrl+V`: Einfügen
+* `Cmd/Ctrl+A`: Alles auswählen
 
-* `Return`: While the _search_ textfield is focused, it will select the next occurrence of your search term. While the _replace_ textfield is focused, it will replace the next occurrence of your search term with the replacement text and automatically search for the next occurrence.
-* `Alt+Return`: While the _replace_ textfield is focused, this will replace all occurrences of your search term with the replacement text.
+## Editor-bezogene Tastaturkürzel
+
+* `Cmd/Ctrl+Alt+C`: Kopiere als HTML. Falls etwas selektiert ist wird es in HTML umgewandelt und nicht als einfacher Text kopiert. Damit kannst du es zum Beispiel in Textverarbeitungsprogramme einfügen.
+* `Cmd/Ctrl+Shift+C`: Ein-/auskommentieren des selektierten Textes (oder einen neuen HTML-Kommentar an der aktuellen Cursor-Position einfügen).
+* `Cmd/Ctrl+X`: Ausschneiden. Falls der Fokus auf dem Editor liegt wird die aktuelle Auswahl ausgeschnitten. Falls nichts ausgewählt sein sollte wird **die gesamte Zeile** der aktuellen Cursor-Position ausgeschnitten.
+* `Cmd/Ctrl+V`: Einfügen. Falls der Fokus auf dem Editor liegt und du gerade eine ganze Zeile ausgeschnitten hast, wird die das Ausgeschnitte in der Zeile über dem Cursor eingefügt. Falls die Zwischenablage formatierten Text enthält wird diese beibehalten.
+* `Cmd/Ctrl+Shift+V`: Das gleiche wie oben, nur das hier die Formatierung des Textes nicht beibehalten wird.
+* `Cmd/Ctrl+B`: Markierten Text fett stellen oder neue Zeichen für fette Formatierung einfügen.
+* `Cmd/Ctrl+I`: Markierten Text kursiv stellen oder neue Zeichen für kursive Formatierung einfügen.
+* `Cmd/Ctrl+K`: Neue Link-Vorlage einfügen oder den ausgewählten Text in die Linkunterschrift eines neuen Links umwandeln. Falls die Zwischenablage einen erkennbaren Link enthält wird auch das Ziel des Links gefüllt.
+* `Cmd/Ctrl+F`: Öffnet das Such-Popup in dem aktuell fokussierten Editor (entweder der Haupteditor oder das Quicklook-Fenster).
+* `Ctrl+Alt+F` (Windows/Linux) `Cmd+Alt+R` (macOS): Einfügen einer neuen Fußnote an der aktuellen Cursor-Position.
+* `Cmd/Ctrl+L`: Neue ID mit dem Generator-Muster aus den Einstellungen generieren und an der aktuellen Cursor-Position einfügen.
+* `Cmd/Ctrl+0`: Zurücksetzen der Schriftgröße auf die Standardeinstellung des Editors.
+* `Cmd+Plus` (macOS) `Ctrl+Shift+Plus` (Windows/Linux): Schriftgröße des Editors erhöhen.
+* `Cmd/Ctrl+Minus`: Schriftgröße des Editors verringern.
+* `Tab`: Liste einrücken.
+* `Shift-Tab`: Ausrücken einer Liste.
+* `Shift-Enter`: Speichern des Referenztextes beim Bearbeiten einer Fußnote. Andernfalls verhindert es das automatische Einfügen eines neuen Listenelements.
+* `Ctrl-Enter`: Neue Zeile unterhalb der aktuellen Cursor-Position einfügen und den Cursor am Anfang dieser positionieren.
+* `Ctrl-Shift-Enter`: Neue Zeile oberhalb der aktuellen Cursor-Position einfügen und den Cursor am Anfang dieser positionieren.
+
+## Tastaturkürzel des Tabelleneditors
+
+Diese Tastaturkürzel funktionieren in jedem Tabelleneditor sobald du im Bearbeitungsmodus bist, den du aktivierst, indem du in die Tabelle klickst.
+
+* `Tab`: Zur nächsten Zelle gehen. Falls die letzte Spalte aktiv ist, geht es in die erste Zelle der nächsten Zeile. Falls dein Cursor in der letzten Spalte der letzten Reihe ist wird automatisch eine neue Zeile hinzugefügt.
+* `Shift-Tab`: Zur vorherigen Zelle gehen. Falls der Cursor in der ersten Spalte ist, geht dieser automatisch zur letzten Zelle der vorherigen Spalte.
+* `Return`: Geht zur selben Spalte in der nächsten Zeile. Falls dein Cursor in der letzten Reihe ist wird automatisch eine neue Zeile hinzugefügt.
+* `Arrow Up/Arrow Down`: Geht zur nächsten/vorherigen Reihe in der gleichen Spalte. Falls du in der ersten oder letzten Zeile bist werden keine neuen Zeilen hinzugefügt.
+* `Arrow Left/Arrow Right`: Bewegt den Cursor nach links/rechts. Falls der Cursor am Anfang/Ende einer Zelle ist geht dieser zur vorherigen/nächsten Zelle.
+
+## Tastaturkürzel für Vorschauen
+
+* `Arrow Up`: Öffnet die vorherige Datei.
+* `Arrow Down`: Öffnet die nächste Datei.
+* `Cmd/Ctrl+Arrow Up`: Springt zum Anfang der Liste.
+* `Cmd/Ctrl+Arrow Down`: JSpringt zum Ende der Liste.
+
+## Popup-bezogene Tastaturkürzel
+
+* `ESC`: Hat ein Textfeld innerhalb des Popups den Fokus lässt sich mit Escape das Popup schließen.
+
+**Im Suchen-Popup des Haupteditors**
+
+* `Return`: Solange das _search_-Textfeld den Fokus hat wird das Tastaturkürzel die nächste gefundene Stelle deines Suchworts auswählen. Solange das _replace_-Textfeld den Fokus hat wird es das nächste Vorkommen deines Suchtextes mit dem neuen Text ersetzen und automatisch zum nächsten Vorkommen gehen.
+* `Alt+Return`: Solange das _replace_-Textfeld den Fokus hat will dieses Tastaturkürzel alle Vorkommen deines Suchtextes durch den neuen Text ersetzen. 
